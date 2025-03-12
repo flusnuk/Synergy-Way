@@ -15,3 +15,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Blueprint Select styles */
+.bp5-select-popover {
+  @apply bg-white rounded-lg shadow-lg border border-gray-200;
+}
+
+.bp5-menu {
+  @apply p-2;
+}
+
+.bp5-menu-item {
+  @apply px-4 py-2 rounded-md hover:bg-gray-100 cursor-pointer transition-colors;
+}
+
+.bp5-menu-item.bp5-active {
+  @apply bg-blue-50;
+}
+
+.bp5-button {
+  @apply bg-white hover:bg-gray-50 border border-gray-300 rounded-md px-4 py-2 text-gray-700 font-medium transition-colors;
+}
+
+.bp5-button:hover {
+  @apply bg-gray-50;
+}
+
+.bp5-icon {
+  @apply text-gray-500;
+}

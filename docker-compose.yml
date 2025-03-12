@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  dev:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm start
+
+  # Production service
+  prod:
+    build: .
+    ports:
+      - "80:80"
+    environment:
+      - NODE_ENV=production 

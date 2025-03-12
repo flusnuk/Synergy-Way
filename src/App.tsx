@@ -1,14 +1,31 @@
 import React from 'react';
-import Dashboard from './components/Dashboard';
+import { Mosaic, MosaicNode } from 'react-mosaic-component';
+import CompanyInfo from './components/CompanyInfo';
+import 'react-mosaic-component/react-mosaic-component.css';
 import '@blueprintjs/core/lib/css/blueprint.css';
-import '@blueprintjs/select/lib/css/blueprint-select.css';
+import '@blueprintjs/icons/lib/css/blueprint-icons.css';
 
-function App() {
+import './App.css';
+
+const App: React.FC = () => {
   return (
     <div className="App">
-      <Dashboard />
+      <Mosaic<string>
+        renderTile={(id, path) => (
+          <CompanyInfo id={id} path={path} />
+        )}
+        initialValue={{
+          direction: 'row',
+          first: 'com_NX6GzO',
+          second: {
+            direction: 'column',
+            first: 'com_agj00z',
+            second: 'com_0XLDdX' 
+          }
+        }}
+      />
     </div>
   );
-}
+};
 
 export default App;

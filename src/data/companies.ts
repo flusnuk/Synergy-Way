@@ -22,7 +22,6 @@ export interface Company {
   legacyIndustryGroup: string;
 }
 
-// Add type for company parameter
 export const companies: Company[] = companiesData.map((company: any) => ({
   ticker: company.ticker,
   name: company.name,

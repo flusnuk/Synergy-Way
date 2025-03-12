@@ -13,7 +13,7 @@
 ## Швидкий старт
 
 1. Клонуйте репозиторій:
-   git clone [url-репозиторію]
+   git clone https://github.com/flusnuk/Synergy-Way.git
 
 2. Інсталювати залежності
 npm install
